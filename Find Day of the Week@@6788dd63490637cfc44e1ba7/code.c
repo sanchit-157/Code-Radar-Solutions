@@ -2,7 +2,6 @@
 
 int main() {
     int a;
-    printf("Enter month number: ");
     scanf("%d", &a);
 
     switch (a) {

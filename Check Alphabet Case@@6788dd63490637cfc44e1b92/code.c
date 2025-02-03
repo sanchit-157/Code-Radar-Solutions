@@ -1,15 +1,21 @@
 #include <stdio.h>
-#include<ctype.h>
-int main(){
-    char a[100];
-    scanf("%s",&a);
-    if(ischaracter(a)){
-        if(isupper(a)){
-            printf("Uppercase");
-        }else{
-            printf("Lowercase");
-        }
-    }else{
-        printf("Not an alphabet");
+#include <ctype.h> // for isupper(), islower()
+
+int main() {
+    char input;
+
+    // Get user input
+    printf("Enter a single character: ");
+    scanf("%c", &input);
+
+    // Check if the input is a letter
+    if (isupper(input)) {
+        printf("Uppercase\n");
+    } else if (islower(input)) {
+        printf("Lowercase\n");
+    } else if ((input >= 32 && input <= 126) || (input < 32 || input > 126)) {
+        printf("Not a letter\n");
     }
+
+    return 0;
 }

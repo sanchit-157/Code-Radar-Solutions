@@ -19,8 +19,8 @@ int main(){
         }case 7{
             printf("Sunday");
         }
-        default{
-            printf("Invalid");
-        }
+    default{
+        printf("Invalid");
+    }
     }
 }

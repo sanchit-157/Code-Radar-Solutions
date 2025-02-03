@@ -3,9 +3,13 @@
 int main(){
     char a;
     scanf("%c",&a);
-    if(isupper(a)){
-        printf("Uppercase");
+    if(ischaracter(a)){
+        if(isupper(a)){
+            printf("Uppercase");
+        }else{
+            printf("Lowercase");
+        }
     }else{
-        printf("Lowercase");
+        printf("Not an alphabet");
     }
 }

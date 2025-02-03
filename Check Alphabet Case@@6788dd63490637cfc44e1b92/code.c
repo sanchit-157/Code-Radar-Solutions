@@ -12,7 +12,7 @@ int main() {
         printf("Uppercase\n");
     } else if (islower(input)) {
         printf("Lowercase\n");
-    } else if ((input >= 32 && input <= 126) || (input < 32 || input > 126)) {
+    } else{
         printf("Not an alphabet\n");
     }
 

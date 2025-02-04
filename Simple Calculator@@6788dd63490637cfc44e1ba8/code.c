@@ -10,6 +10,6 @@ int main(){
     }else if(c=='*'){
         printf("%d",a*b);
     }else{
-        printf("%d",(float)a/b);
+        printf("%f",(float)a/b);
     }
 }

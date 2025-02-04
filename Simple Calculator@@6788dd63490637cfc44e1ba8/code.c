@@ -3,7 +3,6 @@ int main(){
     int a,b;
     char c;
     scanf("%d %d %c",&a, &b ,&c);
-    int d=(float)a/b;
     if(c=='+'){
         printf("%d",a+b);
     }else if(c=='-'){
@@ -12,7 +11,7 @@ int main(){
         printf("%d",a*b);
     }else if(c=='/'){
         if(c!=0){
-            printf("%d",d);
+            printf("%.0f",(float)a/b);
         }else{
             printf("Error");
         }

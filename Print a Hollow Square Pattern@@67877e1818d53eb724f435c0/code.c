@@ -4,7 +4,6 @@ int main() {
     int n;
 
     // Ask user for side length of the square
-    printf("Enter the side length of the square: ");
     scanf("%d", &n);
 
     // Loop through each row

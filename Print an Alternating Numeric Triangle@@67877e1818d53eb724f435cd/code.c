@@ -1,15 +1,19 @@
 #include <stdio.h>
 
-int main() {
-    int a;
-    scanf("%d", &a);
+void print_numeric_triangle(int n) {
+    for (int i = 1; i <= n; i++) {
+        for (int j = 0; j < i; j++) {
 
-    for (int i = 1; i <= a; i++) {
-        for (int j = 1; j <= i; j++) {
-            printf("%d ", (i + j) % 2);
+            printf("%d ", j % 2);
         }
         printf("\n");
     }
+}
 
+int main() {
+    int n;
+    
+    scanf("%d", &n);
+    print_numeric_triangle(n);
     return 0;
 }

@@ -6,5 +6,5 @@ int main(){
     for(int i==a;i>=1;i--){
         n+=i;
     }
-    printf("%d",n)
+    printf("%d",n);
 }

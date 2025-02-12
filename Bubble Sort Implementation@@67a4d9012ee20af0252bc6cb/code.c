@@ -16,24 +16,20 @@ void bubbleSort(int arr[], int n) {
 
 int main() {
     int n;
-    printf("Enter the number of integers: ");
     scanf("%d", &n);
 
     int* arr = (int*)malloc(n * sizeof(int));
 
     if (arr == NULL) {
-        printf("Memory allocation failed.\n");
         return 1;
     }
 
-    printf("Enter %d integers:\n", n);
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
     bubbleSort(arr, n);
 
-    printf("Sorted array in ascending order:\n");
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }

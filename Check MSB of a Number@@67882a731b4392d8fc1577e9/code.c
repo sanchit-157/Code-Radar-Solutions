@@ -5,9 +5,9 @@ int main() {
     scanf("%u", &num);
 
     if (num & (1 << (sizeof(num) * 8 - 1))) {
-        printf("set\n");
+        printf("Set\n");
     } else {
-        printf("not set\n");
+        printf("Not Set\n");
     }
 
     return 0;

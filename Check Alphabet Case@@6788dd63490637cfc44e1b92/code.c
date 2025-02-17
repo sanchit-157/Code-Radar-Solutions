@@ -1,13 +1,11 @@
 #include <stdio.h>
-#include <ctype.h> // for isupper(), islower()
+#include <ctype.h>
 
 int main() {
     char input;
 
-    // Get user inpu
+    
     scanf("%c", &input);
-
-    // Check if the input is a letter
     if (isupper(input)) {
         printf("Uppercase\n");
     } else if (islower(input)) {

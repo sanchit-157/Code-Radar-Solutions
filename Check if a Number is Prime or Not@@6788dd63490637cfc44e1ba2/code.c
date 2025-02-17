@@ -2,14 +2,14 @@
 
 int isPrime(int num) {
     if (num <= 1) {
-        return 0; // Numbers less than or equal to 1 are not prime
+        return 0;
     }
     for (int i = 2; i * i <= num; i++) {
         if (num % i == 0) {
-            return 0; // If num is divisible by any number other than 1 and itself, it's not prime
+            return 0;
         }
     }
-    return 1; // num is prime if no divisors were found
+    return 1;
 }
 
 int main() {
@@ -17,7 +17,7 @@ int main() {
     
     scanf("%d", &num);
     
-    // Check if the number is prime
+    
     if (isPrime(num)) {
         printf("Prime");
     } else {
